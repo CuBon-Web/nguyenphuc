@@ -39,6 +39,7 @@
               alt="{{$setting->company}}">
            </a>
            <div class="box_poy_mb d-lg-none d-inline-block">
+              @include('partials.google-translate-lang')
               <div class="item_poly_mb">
                  <a href="{{route('listCart')}}" title="Giỏ hàng" class="opaci_href">
                  <img width="32" height="32" class="lazyload"
@@ -80,6 +81,7 @@
                     </span>
                  </div>
               </div>
+              @include('partials.google-translate-lang')
               
            </div>
         </div>

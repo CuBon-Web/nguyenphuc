@@ -31,7 +31,7 @@ iframe.goog-te-banner-frame {
     padding: 4px;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgb(16 16 16 / 64%);
+    border: 1px solid rgba(60, 38, 24, 0.28);
     backdrop-filter: blur(6px);
 }
 
@@ -79,8 +79,8 @@ iframe.goog-te-banner-frame {
 
 .gt-lang__btn.is-active {
     color: #fff;
-    background: linear-gradient(135deg, #ca232a 0%, #f85f65 100%);
-    box-shadow: 0 4px 14px rgba(185, 8, 8, 0.28);
+    background: #3C2618;
+    box-shadow: 0 3px 10px rgba(60, 38, 24, 0.22);
 }
 
 .theme-style--light .header:not(.color-fixed) .gt-lang__btn.is-active,
@@ -90,7 +90,7 @@ iframe.goog-te-banner-frame {
 
 .gt-lang__btn:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(185, 8, 8, 0.25);
+    box-shadow: 0 0 0 3px rgba(60, 38, 24, 0.2);
 }
 
 .gt-lang__icon {
@@ -105,10 +105,20 @@ iframe.goog-te-banner-frame {
 }
 
 @media (max-width: 575px) {
+    .logo_mobile .box_poy_mb {
+        flex: 0 0 auto;
+        gap: 6px;
+    }
+
+    .box_poy_mb .gt-lang {
+        padding: 2px;
+    }
+
     .gt-lang__btn {
-        min-width: 34px;
-        padding: 0 10px;
-        font-size: 11px;
+        min-width: 27px;
+        height: 26px;
+        padding: 0 5px;
+        font-size: 10px;
     }
 
     .gt-lang__icon {

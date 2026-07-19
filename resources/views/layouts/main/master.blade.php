@@ -1,6 +1,6 @@
 {{-- https://bean-tools.mysapo.net/ --}}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
    <head>
       @php
       $seoCanonical = trim($__env->yieldContent('canonical')) ?: seo_canonical_url();
@@ -78,6 +78,7 @@
       <link href="/frontend/css/animate.min.css" rel="stylesheet" type="text/css" media="all" />
       <link rel="preload" as='style' type="text/css" href="/frontend/css/quickviews_popup_cart.scss.css">
       <link href="/frontend/css/quickviews_popup_cart.scss.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="/frontend/googletranslate/google-translate-lang.css" rel="stylesheet" type="text/css" media="all" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
@@ -256,6 +257,8 @@
       <script src="/frontend/js/main.js" type="text/javascript"></script>
       <script src="/frontend/js/index.js" type="text/javascript"></script>
       <script src="/frontend/js/compare.js" type="text/javascript"></script>
+      <div id="google_translate_element" class="notranslate" aria-hidden="true"></div>
+      <script src="/frontend/googletranslate/google-translate-lang.js" type="text/javascript"></script>
       @yield('js')
    </body>
 </html>
