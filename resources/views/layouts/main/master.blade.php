@@ -216,6 +216,27 @@
                      <span class="tooltip-text">Facebook</span>
                   </a>
                </li>
+               <li class="addThis_item">
+                  @php
+                     $waPhone = preg_replace('/[^0-9]/', '', (string) ($setting->phone1 ?? ''));
+                     if ($waPhone !== '' && str_starts_with($waPhone, '0')) {
+                        $waPhone = '84' . substr($waPhone, 1);
+                     }
+                  @endphp
+                  <a class="addThis_item--icon" href="https://wa.me/{{ $waPhone }}" target="_blank" rel="nofollow noreferrer" aria-label="WhatsApp">
+                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="url(#paint6_linear)"></circle>
+                        <path d="M22.05 11.2C16.35 11.2 11.7 15.85 11.7 21.55c0 1.85.5 3.65 1.45 5.25l-1.55 5.65 5.8-1.5c1.55.85 3.3 1.3 5.1 1.3 5.7 0 10.35-4.65 10.35-10.35S27.75 11.2 22.05 11.2zm5.95 14.55c-.25.7-1.45 1.3-2.05 1.4-.55.1-1.2.15-1.95-.1-.45-.15-.95-.3-1.65-.6-2.9-1.25-4.8-4.2-4.95-4.4-.15-.2-1.2-1.6-1.2-3.05s.75-2.15 1.05-2.45c.25-.3.55-.35.75-.35h.55c.15 0 .4-.05.6.45.25.55.8 1.95.85 2.1.1.15.1.3 0 .5-.1.2-.15.3-.3.5-.15.15-.3.35-.45.5-.15.15-.3.3-.15.55.15.25.7 1.15 1.5 1.85 1.05.9 1.9 1.2 2.2 1.35.3.15.45.1.65-.1.2-.2.8-.9 1-.1.2-.3.4-.25.7-.15.3.1 1.85.85 2.15 1 .3.15.5.25.55.4.1.15.1.85-.15 1.55z" fill="white"></path>
+                        <defs>
+                           <linearGradient id="paint6_linear" x1="22" y1="0" x2="22" y2="44" gradientUnits="userSpaceOnUse">
+                              <stop offset="50%" stop-color="#2fe26f"></stop>
+                              <stop offset="100%" stop-color="#25D366"></stop>
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                     <span class="tooltip-text">WhatsApp</span>
+                  </a>
+               </li>
             </ul>	
          </div>
          <div class="listSharing_overlay"></div>
