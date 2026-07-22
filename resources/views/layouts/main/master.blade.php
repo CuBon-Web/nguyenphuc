@@ -217,6 +217,21 @@
                   </a>
                </li>
                <li class="addThis_item">
+                  <a class="addThis_item--icon" href="{{ $setting->google }}" target="_blank" rel="nofollow noreferrer" aria-label="TikTok">
+                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="url(#paint7_linear)"></circle>
+                        <path d="M28.4 16.05c-1.15-.75-1.95-1.95-2.15-3.35h-3.35v14.55c0 1.55-1.25 2.8-2.8 2.8s-2.8-1.25-2.8-2.8 1.25-2.8 2.8-2.8c.3 0 .6.05.85.15v-3.45c-.3-.05-.55-.05-.85-.05-3.4 0-6.15 2.75-6.15 6.15s2.75 6.15 6.15 6.15 6.15-2.75 6.15-6.15V20.1c1.3 1 2.95 1.55 4.7 1.55v-3.4c-.95 0-1.85-.25-2.55-.75z" fill="white"></path>
+                        <defs>
+                           <linearGradient id="paint7_linear" x1="22" y1="0" x2="22" y2="44" gradientUnits="userSpaceOnUse">
+                              <stop offset="50%" stop-color="#25F4EE"></stop>
+                              <stop offset="100%" stop-color="#FE2C55"></stop>
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                     <span class="tooltip-text">TikTok</span>
+                  </a>
+               </li>
+               <li class="addThis_item">
                   @php
                      $waPhone = preg_replace('/[^0-9]/', '', (string) ($setting->phone1 ?? ''));
                      if ($waPhone !== '' && str_starts_with($waPhone, '0')) {
